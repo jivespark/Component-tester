@@ -519,6 +519,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "marbastlib-promicroish:Seeeduino_Xiao_rp2040"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -1449,6 +1613,26 @@
 		)
 		(uuid "e1743568-af2b-419c-8ebf-1df9be1ca6b2")
 	)
+	(text_box "Buttons"
+		(exclude_from_sim no)
+		(at 151.13 25.4 0)
+		(size 24.13 26.67)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f63f3411-3a40-4447-8456-852aa2f9aa22")
+	)
 	(junction
 		(at 107.95 36.83)
 		(diameter 0)
@@ -1464,10 +1648,6 @@
 	(no_connect
 		(at 57.15 64.77)
 		(uuid "11fa916c-a6cc-4d74-9012-b5e086ca3248")
-	)
-	(no_connect
-		(at 41.91 49.53)
-		(uuid "1592e2b5-fa78-45a7-9538-e6635b663ad9")
 	)
 	(no_connect
 		(at 59.69 64.77)
@@ -1492,10 +1672,6 @@
 	(no_connect
 		(at 57.15 39.37)
 		(uuid "7089afba-577a-4f58-b21f-81434eb96108")
-	)
-	(no_connect
-		(at 41.91 52.07)
-		(uuid "7cc02585-9109-4ff3-b185-a33ba8f63f88")
 	)
 	(no_connect
 		(at 59.69 39.37)
@@ -1542,6 +1718,16 @@
 			(type default)
 		)
 		(uuid "39d5c241-1931-4034-9b5a-ac4f4679fdda")
+	)
+	(wire
+		(pts
+			(xy 171.45 34.29) (xy 170.18 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53edac58-8507-45d5-8e29-62a088a371c6")
 	)
 	(wire
 		(pts
@@ -1663,8 +1849,18 @@
 		)
 		(uuid "e30c5e28-bb90-4305-bc0b-e48a7f9c5f47")
 	)
+	(wire
+		(pts
+			(xy 171.45 45.72) (xy 170.18 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb14a876-7b79-47f4-8319-8a72cbafb6c4")
+	)
 	(global_label "IN_5V_DIV"
-		(shape input)
+		(shape output)
 		(at 105.41 36.83 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1676,6 +1872,30 @@
 		(uuid "12e8e873-986b-4e9c-af5c-a14ee5a4bed0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 93.2928 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW2"
+		(shape input)
+		(at 41.91 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3234e808-8675-4fb1-bd33-3da00f4d1e1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 35.0544 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1735,8 +1955,32 @@
 			)
 		)
 	)
+	(global_label "SW2"
+		(shape output)
+		(at 160.02 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5b6ae263-15a7-48a3-9ad2-004723d438dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.1644 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SDA"
-		(shape input)
+		(shape output)
 		(at 41.91 54.61 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1760,7 +2004,7 @@
 		)
 	)
 	(global_label "Continuity"
-		(shape input)
+		(shape output)
 		(at 134.62 38.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1784,7 +2028,7 @@
 		)
 	)
 	(global_label "SCL"
-		(shape input)
+		(shape output)
 		(at 41.91 57.15 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1832,7 +2076,7 @@
 		)
 	)
 	(global_label "IN_5V"
-		(shape input)
+		(shape output)
 		(at 111.76 68.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1844,6 +2088,54 @@
 		(uuid "a3b58315-1831-49bf-8ce4-609112ac52af")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 103.5738 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW1"
+		(shape input)
+		(at 41.91 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b5b1f1a3-55da-4a65-9e55-31e7fd72cd93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 35.0544 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW1"
+		(shape output)
+		(at 160.02 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bef54dd3-6ae2-4f90-be88-e8a3c30c5dd4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.1644 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2468,6 +2760,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 171.45 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6debfe9b-119c-41bc-ba9d-36666049bdb9")
+		(property "Reference" "#PWR013"
+			(at 171.45 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25c747c3-500d-414a-810d-c3c15f998c0b")
+		)
+		(instances
+			(project "Component tester"
+				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 132.08 35.56 90)
 		(unit 1)
@@ -2625,6 +2995,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72d9e312-c089-4963-a437-d5b3a23d9e5e")
+		(property "Reference" "SW2"
+			(at 165.1 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 165.1 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb7546f2-0c68-4acf-8f1a-bdfe4a46362c")
+		)
+		(pin "2"
+			(uuid "495a2abe-ccc9-456f-b38f-97ce6ebb2e4d")
+		)
+		(instances
+			(project "Component tester"
+				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 111.76 60.96 0)
 		(unit 1)
@@ -2697,6 +3147,86 @@
 			(project "Component tester"
 				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8657b52d-0f72-4032-b802-a0cc81c89928")
+		(property "Reference" "SW1"
+			(at 165.1 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 165.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01f24c72-4005-4585-913a-d185df3adac6")
+		)
+		(pin "2"
+			(uuid "56ad07ae-9919-43da-bce7-d7b4c7a86dd2")
+		)
+		(instances
+			(project "Component tester"
+				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -2910,6 +3440,84 @@
 			(project "Component tester"
 				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a811bb59-a0e6-4cb1-89f9-8e30c577ee9e")
+		(property "Reference" "#PWR012"
+			(at 171.45 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ab5649c-0775-4150-b952-a57de5d2eac3")
+		)
+		(instances
+			(project "Component tester"
+				(path "/56e88ab6-819e-4556-a41f-72e1a8dcbe2c"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
