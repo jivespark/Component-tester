@@ -47,7 +47,7 @@ v_text=label.Label(
     text="",
     color=0xFFFFFF,
     x=40,
-    y=24
+    y=28
 )
 group.append(v_text)
 
