@@ -13,5 +13,10 @@ The latest CircuitPython will need to be downloaded to the XIAO for the code to 
 Copy everything from the firmware folder onto the board, and it should run.
 
 ## Images:
+![Render](https://github.com/jivespark/Component-tester/blob/main/Images/Render.png?raw=true)
+
+![PCB](https://github.com/jivespark/Component-tester/blob/main/Images/PCB.png?raw=true)
+
+![Schematic](https://github.com/jivespark/Component-tester/blob/main/Images/Schematic.png?raw=true)
 
 ## BOM:
