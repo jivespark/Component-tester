@@ -20,3 +20,11 @@ Copy everything from the firmware folder onto the board, and it should run.
 ![Schematic](https://github.com/jivespark/Component-tester/blob/main/Images/Schematic.png?raw=true)
 
 ## BOM:
+|Item                    |Qty|Supplier  |Cost/item|Total Cost|link                                                 |
+|------------------------|---|----------|---------|----------|-----------------------------------------------------|
+|Buttons                 |1  |Aliexpress|$2.03    |$2.03     |https://www.aliexpress.com/item/1005003666060830.html|
+|XIAO RP2040             |1  |Aliexpress|$1.95    |$1.95     |https://www.aliexpress.com/item/1005013497370642.html|
+|128x64 OLED             |1  |Aliexpress|$2.71    |$2.71     |https://www.aliexpress.com/item/1005009170035050.html|
+|Resistors               |1  |Aliexpress|$4.29    |$4.29     |https://www.aliexpress.com/item/1005004509226482.html|
+|PCB                     |1  |JLCPC     |$2.00    |$2.00     |https://cart.jlcpcb.com/quote                        |
+|Estimated total shipping|1  |          |         |$5.76     |                                                     |
